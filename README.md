@@ -26,7 +26,7 @@ Git Grab clones a repo into `$GRAB_HOME`, organised by domain and path.
 `GRAB_HOME` defaults to `~/src` if not set or supplied via the `--home`
 argument. For example:
 
-    $ git grab github.com/wezm/git-grab
+    $ git-grab github.com/wezm/git-grab
     Cloning into '/home/wmoore/src/github.com/wezm/git-grab'...
     remote: Enumerating objects: 30, done.
     remote: Counting objects: 100% (30/30), done.
