@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    install:
+      glob: "{**/*.rs,Cargo.*}"
+      run: |
+        cargo install --quiet --no-track --force --path .
+        cargo build --release --locked
+        cp target/release/git-grab ~/.cargo/bin/
