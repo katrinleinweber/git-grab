@@ -58,6 +58,7 @@ fn clone(url: &Url, dest_path: &Path) -> Result<ExitStatus, io::Error> {
     // TODO: Support other version control systems
     Command::new("git")
         .arg("clone")
+        .arg("--origin=upstream")
         .arg(url.as_str())
         .arg(dest_path)
         .status()
