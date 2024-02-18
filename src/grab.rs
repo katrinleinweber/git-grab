@@ -59,7 +59,6 @@ fn clone(url: &Url, dest_path: &Path) -> Result<ExitStatus, io::Error> {
     Command::new("git")
         .arg("clone")
         .arg("--depth=3")
-        .arg("--filter=tree:0")
         .arg("--filter=blob:none")
         .arg("--shallow-submodules")
         .arg("--origin=upstream")
